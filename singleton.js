@@ -20,5 +20,5 @@ class Universe {
 let u1 = new Universe();
 let u2 = new Universe();
 
-console.log(u1.foo);
-console.log(u1 === u2);
+console.log(u1.foo); //'bar'
+console.log(u1 === u2); //true
