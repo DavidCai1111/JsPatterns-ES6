@@ -17,5 +17,5 @@
 [5]: https://github.com/DavidCai1993/JsPattern-ES6/blob/master/strategy.js
 [6]: https://github.com/DavidCai1993/JsPattern-ES6/blob/master/facade.js
 [7]: https://github.com/DavidCai1993/JsPattern-ES6/blob/master/proxy.js
-[7]: https://github.com/DavidCai1993/JsPattern-ES6/blob/master/sub_pub.js
+[8]: https://github.com/DavidCai1993/JsPattern-ES6/blob/master/sub_pub.js
 
