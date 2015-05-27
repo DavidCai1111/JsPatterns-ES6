@@ -1,0 +1,24 @@
+'use strict';
+
+class CarMaker {
+  constructor() {
+    this.doors = 0;
+  }
+
+  drive() {
+    console.log(`jaja, i have ${this.doors} doors`);
+  }
+
+  static factory(type) {
+    return new CarMaker[type]();
+  }
+}
+
+CarMaker.Compact = class Compact extends CarMaker {
+  constructor() {
+    super();
+    this.doors = 4;
+  }
+};
+
+new CarMaker().factory('Compact').drive();
