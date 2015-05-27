@@ -11,7 +11,7 @@ class Sale {
   }
 
   getPrice() {
-    for (let decorator of this.decoratorsList){
+    for (let decorator of this.decoratorsList) {
       this.price = decorator(this.price);
     }
     return this.price.toFixed(2);
@@ -21,7 +21,7 @@ class Sale {
     return price + price * 7.5 / 100;
   }
 
-  static fedtax(price){
+  static fedtax(price) {
     return price + price * 5 / 100;
   }
 }
