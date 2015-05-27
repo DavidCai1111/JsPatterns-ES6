@@ -8,9 +8,7 @@ let agg = {
         if (index < this.data.length) return {value: this.data[index++], done: false};
         return {value: undefined, done: true};
       },
-      hasNext: () => {
-        return (index < this.data.length);
-      },
+      hasNext: () => index < this.data.length,
       rewind: () => {
         index = 0;
       },
@@ -27,6 +25,7 @@ let iter = agg[Symbol.iterator]();
 console.log(iter.next()); // { value: 1, done: false }
 console.log(iter.next()); // { value: 2, done: false }
 console.log(iter.current());// { value: 2, done: false }
+console.log(iter.hasNext());// true
 console.log(iter.rewind()); // rewind!
 console.log(iter.next()); // { value: 1, done: false }
 
