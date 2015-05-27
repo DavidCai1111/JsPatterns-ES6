@@ -1,13 +1,19 @@
 'use strict';
 
+let __instance = (function () {
+  let instance;
+  return (newInstance) => {
+    if (newInstance) instance = newInstance;
+    return instance;
+  }
+}());
+
 class Universe {
   constructor() {
-    if (Universe.instance) {
-      return Universe.instance;
-    }
+    if (__instance()) return __instance();
     //按自己需求实例化
     this.foo = 'bar';
-    Universe.instance = this;
+    __instance(this);
   }
 }
 
