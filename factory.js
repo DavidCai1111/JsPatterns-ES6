@@ -21,4 +21,4 @@ CarMaker.Compact = class Compact extends CarMaker {
   }
 };
 
-new CarMaker().factory('Compact').drive();
+new CarMaker().factory('Compact').drive(); // 'jaja, i have 4 doors'
