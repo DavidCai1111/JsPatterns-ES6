@@ -1,3 +1,4 @@
+'use strict';
 class Event {
   constructor() {
     this.subscribers = new Map([['any', []]]);
@@ -19,4 +20,4 @@ class Event {
 let event = new Event();
 
 event.on((content) => console.log(`get published content: ${content}`), 'myEvent');
-event.emit('jaja', 'myEvent');
+event.emit('jaja', 'myEvent'); //get published content: jaja
