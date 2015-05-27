@@ -4,15 +4,13 @@ let config = new Map([['first_name', 'isNonEmpty'], ['age', 'isNumber'], ['usern
 
 class Checker {
   constructor(check, instructions) {
-    this.check = check;
-    this.instructions = instructions;
+    [this.check, this.instructions] = [check, instructions];
   }
 }
 
 class Validator {
   constructor(config) {
-    this.config = config;
-    this.messages = [];
+    [this.config, this.messages] = [config, []];
   }
 
   validate(data) {

@@ -9,9 +9,7 @@ let agg = {
         return {value: undefined, done: true};
       },
       hasNext: () => index < this.data.length,
-      rewind: () => {
-        index = 0;
-      },
+      rewind: () => index = 0,
       current: () => {
         index -= 1;
         if (index < this.data.length) return {value: this.data[index++], done: false};
