@@ -1,5 +1,4 @@
 'use strict';
-
 let __instance = (function () {
   let instance;
   return (newInstance) => {

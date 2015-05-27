@@ -37,4 +37,4 @@ Validator.isAlphaNum = new Checker((val) => !/^a-z0-9/i.test(val), 'the value ca
 
 let validator = new Validator(config);
 validator.validate(data);
-console.log(validator.messages.join('\n'));
+console.log(validator.messages.join('\n')); //the value can only be a valid number **unknown**
