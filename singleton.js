@@ -10,7 +10,6 @@ let __instance = (function () {
 class Universe {
   constructor() {
     if (__instance()) return __instance();
-    //按自己需求实例化
     this.foo = 'bar';
     __instance(this);
   }
